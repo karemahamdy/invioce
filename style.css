@@ -106,7 +106,68 @@ th, td {
   color: #777;
   font-weight: bold;
 }
-
+  .summary-section {
+            display: flex;
+            
+            margin-bottom: 20px;
+        }
+        
+        .qr-code {
+            width: 30%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .qr-image {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .summary-table-container {
+            width: 70%;
+            padding: 15px;
+            border: 2px solid #ddd;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+         td {
+            padding: 8px;
+        }
+        
+        .summary-table th {
+            text-align: right;
+            font-weight: normal;
+            border: none;
+            padding-right: 10px;
+        }
+        
+        .summary-table td {
+            text-align: right;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            border: none;
+        }
+        
+        .amount-words {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .arabic {
+            direction: rtl;
+            font-family: 'Traditional Arabic', Arial, sans-serif;
+            text-align: right;
+        }
+        
+        .english {
+            text-align: left;
+        }
 
 .invoice-container {
   max-width: 800px;
@@ -190,8 +251,65 @@ table .items-table td {
 .items-table td {
   padding-top: 9px !important;
 }
+
+
+.qr-code {
+  width: 30%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-image {
+  width: 150px;
+  height: 150px;
+}
+
+.summary-table-container {
+  width: 70%;
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+}
+
+.summary-table th {
+  text-align: right;
+  font-weight: normal;
+  border: none;
+  padding-right: 10px;
+}
+
+.summary-table td {
+  text-align: right;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border: none;
+}
+
+.amount-words {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.arabic {
+  direction: rtl;
+  font-family: 'Traditional Arabic', Arial, sans-serif;
+  text-align: right;
+}
+
+.english {
+  text-align: left;
+}
 .footer-table {
-  margin-top: 50px;
+  margin-top: 240px;
   border-top: 1px solid #ddd;
 }
 .footer-table th,

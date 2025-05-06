@@ -27,8 +27,8 @@
           <thead>
               <tr>
                   <th class="company-info arabic">
-                      <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px;">شركة رواد  الحتراف  التجارية</div>
-                      <div style="font-size: 14px; margin-bottom: 5px;">الرياض - حي جرير - شارع ابن الفرات مبنى رقم 7405</div>
+                      <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px; text-align: left">شركة رواد  الحتراف  التجارية</div>
+                      <div style="font-size: 14px; margin-bottom: 5px; text-align: left">الرياض - حي جرير - شارع ابن الفرات مبنى رقم 7405</div>
                   </th>
                   <th class="bill-to">
                       <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px; display: flex;">
@@ -53,20 +53,18 @@
                       <table width="100%">
                         <tbody>
                           <tr>
-                            <th class="label text-left">VAT. Reg. No</th>
-                            <th class="text-center">:</th>
+                            <th class="label text-left">VAT. Reg. No:</th>
+                          
                             <td class="value text-left">310435014200003</td>
                             <td class="arabic text-right">رقم تسجيل الضريبة</td>
                           </tr>
                           <tr>
                             <th class="label text-left">Invoice Date</th>
-                            <th class="text-center">:</th>
                             <td class="value text-left">01/01/2025 10:56:15 130</td>
                             <td class="arabic text-right">تاريخ الفاتورة</td>
                           </tr>
                           <tr>
                             <th class="label text-left">Invoice Number</th>
-                            <th class="text-center">:</th>
                             <td class="value text-left">250000001</td>
                             <td class="arabic text-right">رقم الفاتورة</td>
                           </tr>
@@ -78,13 +76,13 @@
                           <tbody>
                               <tr>
                                 <th class="label text-left" >Customer VAT Reg. No</th>
-                                <th class="text-center">:</th>
+  
                                 <td class="value text-left">305000764300003</td>
                                   <td class="arabic text-right">رقم تسجيل الضريبة للعميل</td>
                                 </tr>
                                 <tr>
                                   <th class="label text-left">Customer Reference</th>
-                                  <th class="text-center">:</th>
+    
                                   <td class="value text-left">110302011</td>
                                   <td class="arabic text-right">رقم العميل</td>
                                 </tr>
@@ -122,42 +120,45 @@
 
         <!-- Summary Section -->
         <div class="summary-section">
-            <div class="qr-code">
-                <img src="/placeholder.svg?height=120&width=120" alt="QR Code" class="qr-image">
-            </div>
-            <div class="summary-table">
-                <table>
-                    <tr>
-                        <th style="text-align: right;">إجمالي الفاتورة (باستثناء ضريبة القيمة المضافة)<br>Invoice Total (Excluding VAT)</th>
-                        <td style="text-align: center; width: 20%;">21600.00</td>
-                    </tr>
-                    <tr>
-                        <th style="text-align: right;">قيمة الضريبة<br>TAX</th>
-                        <td style="text-align: center;">3240.00</td>
-                    </tr>
-                    <tr>
-                        <th style="text-align: right;">المجموع الكلي (شامل ضريبة القيمة المضافة)<br>Invoice Grand Total (Including VAT)</th>
-                        <td style="text-align: center;">24840.00</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <!-- Amount in Words -->
-        <div class="amount-words">
-            <p>Twenty Four Thousand Eight Hundred and Forty Riyals only</p>
-            <p class="arabic-amount">فقط أربعة و عشرون ألفاً و ثمانمائة و أربعون ريالاً لا غير</p>
-        </div>
+          <div class="qr-code">
+              <img src="qr.png" alt="QR Code" class="qr-image">
+          </div>
+          <div class="summary-table-container">
+              <table class="summary-table">
+                  <thead>
+                      <tr>
+                          <th class="arabic">إجمالي الفاتورة (باستثناء ضريبة القيمة المضافة)<br>Invoice Total (Excluding VAT)</th>
+                          <td>21600.00</td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th class="arabic">القيمة المضافة<br>VAT</th>
+                          <td>3240.00</td>
+                      </tr>
+                      <tr>
+                          <th class="arabic">المجموع الكلي للفاتورة (بما في ذلك ضريبة القيمة المضافة)<br>Invoice Grand Total (Including VAT)</th>
+                          <td>24840.00</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      
+      <div class="amount-words">
+          <p class="arabic">فقط أربعة و عشرون ألفاً و ثمانمائة و أربعون ريالاً لا غير</p>
+          <p class="arabic">Twenty Four Thousand Eight Hundred and Forty Riyals only.</p>
+      </div>
 
         <!-- Footer -->
-        <table class="footer-table">
-            <tr>
-                <th style="width: 15%; text-align: left;">Date & Time</th>
-                <td style="width: 85%; text-align: left;">: 16/01/2025 15:56:30AM</td>
+        <table class="footer-table" style="color: rgb(26, 26, 218);">
+            <tr >
+                <th style="width: 15%; text-align: left; padding-top: 6px !important;">Date & Time</th>
+                <td style="width: 85%; text-align: left; padding-top: 6px !important;">: 16/01/2025 15:56:30AM</td>
             </tr>
             <tr>
-                <th style="text-align: left;">Username</th>
-                <td style="text-align: left;">: عبدالله الحميد</td>
+                <th style="text-align: left; padding-top: 6px !important;">Username</th>
+                <td style="text-align: left; padding-top: 6px !important;">: عبدالله الحميد</td>
             </tr>
         </table>
     </div>
