@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="invoice-container page-inner">
+        <!-- Header Section -->
+        <table class="header-table">
+             <tr>
+               <th class="logo-cell">
+                 <img src="logo.png" alt="Company Logo" class="logo">
+                 
+                </th>
+                <th class="title-cell">
+                  <h2 class="invoice-title arabic">فاتورة ضريبية</h2>
+                    <h2 class="invoice-title">TAX INVOICE</h2>
+                  </th>
+                </tr>
+              </table> 
+              <!-- Billing Information -->
+        <table>
+          <thead>
+              <tr>
+                  <th class="company-info arabic">
+                      <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px;">شركة رواد  الحتراف  التجارية</div>
+                      <div style="font-size: 14px; margin-bottom: 5px;">الرياض - حي جرير - شارع ابن الفرات مبنى رقم 7405</div>
+                  </th>
+                  <th class="bill-to">
+                      <div style="font-size: 16px; font-weight: bold; margin-bottom: 10px; display: flex;">
+                        <span class="text-left">BILL TO</span>
+                        <span class="separator">|</span>
+                          <span class="arabic text-left">فاتورة إلى</span>
+                      </div>
+                      <div class="arabic text-left" style="font-size: 14px; margin-bottom: 5px;">مؤسسة لارا للأجهزة الإلكترونية</div>
+                      <div class="arabic text-left" style="font-size: 14px;">حفر الباطن - الشعبة</div>
+                  </th>
+              </tr>
+          </thead>
+      </table>
+      
+      <!-- Invoice Details -->
+      <table class="invoice-details">
+          <tbody>
+              <tr>
+                  <td class="col-left">
+                      <table width="100%">
+                          <tbody>
+                              <tr>
+                                  <th class="label text-left" width="30%">VAT. Reg. No</th>
+                                  <th class="text-center" width="5%">:</th>
+                                  <td class="value text-left" width="30%">310435014200003</td>
+                                  <td class="arabic text-right" width="35%">رقم تسجيل الضريبة</td>
+                              </tr>
+                              <tr>
+                                  <th class="label text-left">Invoice Date</th>
+                                  <th class="text-center">:</th>
+                                  <td class="value text-left">01/01/2025 10:56:15 130</td>
+                                  <td class="arabic text-right">تاريخ الفاتورة</td>
+                              </tr>
+                              <tr>
+                                  <th class="label text-left">Invoice Number</th>
+                                  <th class="text-center">:</th>
+                                  <td class="value text-left">250000001</td>
+                                  <td class="arabic text-right">رقم الفاتورة</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+                  <td class="col-right">
+                      <table width="100%">
+                          <tbody>
+                              <tr>
+                                  <th class="label text-left" width="40%">Customer VAT Reg. No</th>
+                                  <th class="text-center" width="5%">:</th>
+                                  <td class="value text-left" width="30%">305000764300003</td>
+                                  <td class="arabic text-right" width="25%">رقم تسجيل الضريبة للعميل</td>
+                              </tr>
+                              <tr>
+                                  <th class="label text-left">Customer Reference</th>
+                                  <th class="text-center">:</th>
+                                  <td class="value text-left">110302011</td>
+                                  <td class="arabic text-right">رقم العميل</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+        <!-- Invoice Items -->
+        <table class="items-table">
+            <tr>
+                <th style="width: 7%;" class="text-center">م<br>#</th>
+                <th style="width: 37%;" class="text-right">البيان/الوصف<br>Item Description</th>
+                <th style="width: 13%;" class="text-center">الكمية<br>Quantity</th>
+                <th style="width: 12%;" class="text-center">سعر الوحدة<br>Unit Price</th>
+                <th style="width: 14%;" class="text-center">خصم<br>Discount</th>
+                <th style="width: 13%;" class="text-center">المجموع الفرعي<br>Sub Total</th>
+                <th style="width: 10%;" class="text-center">قيمة الضريبة<br>TAX Amount</th>
+                <th style="width: 15%;" class="text-center">المجموع الكلي<br>Grand Total</th>
+            </tr>
+            <tr>
+                <td class="text-center">1</td>
+                <td class="text-right">قيمة عقد سنوي من 01/01/2025<br>إلى تاريخ 30/06/2025</td>
+                <td class="text-center">1.00</td>
+                <td class="text-center">21600.00</td>
+                <td class="text-center">0.00</td>
+                <td class="text-center">21600.00</td>
+                <td class="text-center">3240.00</td>
+                <td class="text-center">24840.00</td>
+            </tr>
+        </table>
+
+        <!-- Summary Section -->
+        <div class="summary-section">
+            <div class="qr-code">
+                <img src="/placeholder.svg?height=120&width=120" alt="QR Code" class="qr-image">
+            </div>
+            <div class="summary-table">
+                <table>
+                    <tr>
+                        <th style="text-align: right;">إجمالي الفاتورة (باستثناء ضريبة القيمة المضافة)<br>Invoice Total (Excluding VAT)</th>
+                        <td style="text-align: center; width: 20%;">21600.00</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">قيمة الضريبة<br>TAX</th>
+                        <td style="text-align: center;">3240.00</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">المجموع الكلي (شامل ضريبة القيمة المضافة)<br>Invoice Grand Total (Including VAT)</th>
+                        <td style="text-align: center;">24840.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Amount in Words -->
+        <div class="amount-words">
+            <p>Twenty Four Thousand Eight Hundred and Forty Riyals only</p>
+            <p class="arabic-amount">فقط أربعة و عشرون ألفاً و ثمانمائة و أربعون ريالاً لا غير</p>
+        </div>
+
+        <!-- Footer -->
+        <table class="footer-table">
+            <tr>
+                <th style="width: 15%; text-align: left;">Date & Time</th>
+                <td style="width: 85%; text-align: left;">: 16/01/2025 15:56:30AM</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Username</th>
+                <td style="text-align: left;">: عبدالله الحميد</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
