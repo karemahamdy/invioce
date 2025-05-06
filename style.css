@@ -68,7 +68,7 @@
         
         .invoice-details {
             width: 100%;
-            border-top: 1px solid #ddd;
+            /* border-top: 1px solid #ddd; */
         }
         
         .invoice-details th, .invoice-details td {
